@@ -1,0 +1,150 @@
+#navbar{
+ 
+  
+  width: 100%;
+  padding: 0.3%;
+  padding-bottom: 1.4%;
+  background-color: rgba(24, 21, 21, 0.2)
+ 
+  
+}
+
+img{
+ position: relative;
+ height: 100%;
+ width: 100%;
+  
+}
+
+a{
+  font-size: 110%;  
+  color: black;
+  text-decoration: none; 
+  padding: 8%;
+  
+}
+.login{
+  
+  position: relative; 
+  width: 10%;
+  float: right;  
+  text-align: center; 
+  padding: 1.4%;
+  margin-top: -3%;
+  border-radius: 1%;
+  
+  
+}
+
+.login:hover{
+  background-color: gray;   
+}
+
+.menu{      
+    margin-left: 40%;
+    width: 18%; 
+    font-family: 'Anton', sans-serif;      
+    text-shadow: black 0.1em 0.1em 0.2em;   
+    margin-top: -2%;
+    font-size: 150%;
+    position: relative;
+    margin-top: -3.3%;
+    text-align: center; 
+    overflow: hidden;      
+}
+
+.logo{
+  height: 100%;
+  width: 20%;
+  position: relative; 
+     
+}
+p,h1{
+  text-align: center;
+  display: block;
+}
+
+.tutorial{
+  
+  width: 90%;
+  margin-left: 5%;
+  font-family: 'Roboto', sans-serif;  
+  padding: 1%;
+  margin-top: 1%;  
+  text-align: center;
+  list-style-type: circle;
+ 
+ line-height: 1.5;
+}
+body{
+  background-color:rgba(186, 186, 186, 0.1);
+  padding: 0;
+}
+.log{
+  margin-left: 67%;
+  margin-top: -1%;
+  background-color:rgba(186, 186, 186, 0.5);
+  padding-right: 3%;
+  display: none;
+  position: absolute;
+  
+}
+.log ul li {
+
+list-style-type: none;
+padding: 0.1%;
+float: left;
+clear: both;
+
+}
+
+.logNew{
+  margin-left: 67%;
+  margin-top: -1%;
+  background-color:rgba(186, 186, 186, 0.5);
+  padding-right: 3%;
+  display: none;
+  position: absolute;
+  
+}
+.logNew ul li {
+
+list-style-type: none;
+padding: 0.1%;
+float: left;
+clear: both;
+
+
+}
+
+table {
+  font-family: 'Roboto', sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+  display: none;
+  margin-left: 30%;
+  
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+#param{
+ display: none;
+}
+#esconder{
+  display: none;
+ }
+
+
+
+  
+
+
+

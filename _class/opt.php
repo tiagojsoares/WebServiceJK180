@@ -2,10 +2,12 @@
 class option{
 
     function action($option,$login,$senha,$tokenG){
-         $opt=$option;
-
+        $opt = strtolower($option);
+         
+         
         switch ($opt) {
-            case 'gerarToken':
+            
+            case 'gerartoken':
             require_once("token.php");
             
               $token = new token($login,$senha,$tokenG);           
@@ -13,8 +15,14 @@ class option{
                 break;
         
                 case 'inserir':
-                require_once("_class/consultaToken.php");
-               //echo 'Inserir um novo funcionario';
+                
+                //$_SESSION['login']=$login;
+                //$_SESSION['senha']=$senha;
+                $_SESSION['token']=$tokenG;
+                $_SESSION['opt']=$opt;
+                
+                 
+                return require_once("consultaToken.php");      
                 break;
         
                 /////Caso Delete
@@ -22,17 +30,72 @@ class option{
                 $_SESSION['login']=$login;
                 $_SESSION['senha']=$senha;
                 $_SESSION['token']=$tokenG;
-                $_SESSION['opt']=$opt;              
-                return require_once("consultaToken.php");
-                
+                $_SESSION['opt']=$opt; 
+                        
+                return require_once("consultaToken.php");       
 
-                             
-                
-                
                 break;
+
+            case 'incluiracesso':
+            $_SESSION['login']=$login;
+            $_SESSION['senha']=$senha;
+            $_SESSION['token']=$tokenG;
+            $_SESSION['opt']=$opt; 
+            return require_once("consultaToken.php");
+            break;
+
+            case 'excluiracesso':
             
+            $_SESSION['login']=$login;
+            $_SESSION['senha']=$senha;
+            $_SESSION['token']=$tokenG;
+            $_SESSION['opt']=$opt; 
+            
+            return require_once("consultaToken.php");
+
+            case 'alterar':
+            $_SESSION['login']=$login;
+            $_SESSION['senha']=$senha;
+            $_SESSION['token']=$tokenG;
+            $_SESSION['opt']=$opt; 
+            
+            return require_once("consultaToken.php");
+            
+            break;
+            case 'cartaoinserir':
+            $_SESSION['login']=$login;
+            $_SESSION['senha']=$senha;
+            $_SESSION['token']=$tokenG;
+            $_SESSION['opt']=$opt; 
+            
+            return require_once("consultaToken.php");
+
+            
+            break;
+
+            case 'cartaodeletar':
+            $_SESSION['login']=$login;
+            $_SESSION['senha']=$senha;
+            $_SESSION['token']=$tokenG;
+            $_SESSION['opt']=$opt; 
+            
+            return require_once("consultaToken.php");
+
+            
+            break;
+            case 'cartaoalterar':
+            $_SESSION['login']=$login;
+            $_SESSION['senha']=$senha;
+            $_SESSION['token']=$tokenG;
+            $_SESSION['opt']=$opt; 
+            
+            return require_once("consultaToken.php");
+
+            
+            break;
             default:
-            return "<ERRO>Digite uma 'Action' Válida</ERRO>";
+
+            return "<ERRO> Digite uma Action Valida </ERRO>";
                 break;
 
         }

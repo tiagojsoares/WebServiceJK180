@@ -23,8 +23,8 @@ class MinhaInterfaceSoap
     }
     public function Text1($text1,$token){     
        require_once("_dbm/delete.php");
-       $delete = new delete();
-       $delete->insertDelete($text1,$token);       
+       $delete = new delete();       
+       $delete->insertLog($text1,$token);       
     }
 }
 
