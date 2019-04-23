@@ -1,26 +1,21 @@
 (function(){
     
-    var usuario = document.querySelector('#new');    
-    var logout = document.querySelector('#logout');
-    var login = document.querySelector('#login');
-    var btnNew = document.querySelector('#new');
-     
+
+    newuser.style.display='inline';   
+    logout.style.display='inline';    
     login.style.display='none';
-    logout.style.display='block';
-    usuario.style.display='block';
-    param.style.display='block';
-    tutorial.style.display='none';
+    
 
     logout.addEventListener('click',function(){
         sessionStorage.clear(); 
-        login.style.display='block';
+        login.style.display='inline';
         logout.style.display='none';  
         document.cookie="login=";
         document.cookie="users=";
         window.location.reload(1);
     }); 
 
-btnNew.addEventListener('click',function(e){
+newuser.addEventListener('click',function(e){
     e.preventDefault();
     var user = document.querySelector('#userNew');
     var senha = document.querySelector('#passwordNew');
