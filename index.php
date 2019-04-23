@@ -61,8 +61,7 @@ $options = array(
 
 $client = new SoapClient(null, $options);
 
-$arquivo_xml = "
-<?xml version='1.0' encoding='UTF-8' standalone='yes' ?>";
+$arquivo_xml = "<?xml version='1.0' encoding='UTF-8' standalone='yes' ?>";
 $arquivo_xml .= $client->opt($option, $login, $senha, $token);
 header('Content-Type: application/xml; charset=utf-8');
 print_r($arquivo_xml);
@@ -71,8 +70,7 @@ print_r($arquivo_xml);
 
 // echo $client->opt($option,$login,$senha);
 } else {
-$arquivo_xml = "
-<?xml version='1.0' encoding='UTF-8' standalone='yes' ?>";
+$arquivo_xml = "<?xml version='1.0' encoding='UTF-8' standalone='yes' ?>";
 $arquivo_xml .= '<ERRO> Ocorreu um erro verifique usuario, senha, action e os campos digitados</ERRO>';
 header('Content-Type: application/xml; charset=utf-8');
 print($arquivo_xml);
