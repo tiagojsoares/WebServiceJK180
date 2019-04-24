@@ -1,17 +1,17 @@
 <?php
 class db{
-
-
-//var $host = "localhost";
+var $host = "localhost";
+var $user = "controller";
+var $pass = "admin";
+var $base = "controller_bms";
+/*
+//Banco de Dados Azure
 var $host = "127.0.0.1:54261";
-//var $user = "controller";
 var $user = "azure";
-///var $pass = "admin";
 var $pass = "6#vWHD_$";
-//var $base = "controller_bms";
 var $base = "localdb";
 var $conn = null;
-
+*/
 function connect() {
 
      

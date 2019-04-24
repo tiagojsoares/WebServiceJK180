@@ -90,8 +90,6 @@ print($arquivo_xml);
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>WebService-JK180</title>
     <link rel="stylesheet" href="_css/style.css">
-    <link rel="stylesheet" href="_css/Anton-Regular.ttf">
-    <link rel="stylesheet" href="_css/_font/Roboto-Medium.ttf">
 
 </head>
 

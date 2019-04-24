@@ -20,14 +20,24 @@ newuser.addEventListener('click',function(e){
     var user = document.querySelector('#userNew');
     var senha = document.querySelector('#passwordNew');
     var form = document.querySelector('.logNew');
+    var nomeU = document.querySelector('#nome');
     form.style.display='block';
 
     $('#formNew').submit(function (e) {
         e.preventDefault();
         var formulario = $(this);
-        var retorno = inserirForm(formulario, 'function=inserir');
-        //sessionStorage.setItem('temp', formulario.serialize());
-        //console.log(formulario.serialize());
+        
+       if(user.value==='' && senha.value ==='' && nomeU.value===''){
+
+        alert('Preeencha todos os campos');
+
+        //window.location.reload(1);
+       }
+       else{
+        var retorno = inserirForm(formulario, 'function=inserir');  
+       }
+
+         
 
         function inserirForm(dados, funcao) {
             $.ajax({
@@ -35,7 +45,8 @@ newuser.addEventListener('click',function(e){
             }).then(sucesso, falha);
             function sucesso(data) {               
               console.log(data);
-                //window.location.reload(1);
+
+                window.location.reload(1);
                
                 
             }
