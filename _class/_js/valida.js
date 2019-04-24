@@ -45,9 +45,7 @@ newuser.addEventListener('click',function(e){
             }).then(sucesso, falha);
             function sucesso(data) {               
               console.log(data);
-
-                window.location.reload(1);
-               
+                window.location.reload(1);              
                 
             }
             function falha() {
