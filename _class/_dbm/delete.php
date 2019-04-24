@@ -17,7 +17,7 @@ class delete{
          
         $agora = date('Y-m-d H:i:s');
         try{
-            $sqlInsert = "INSERT into log VALUES (NULL,$idq,'$text','$agora')"; 
+            $sqlInsert = "INSERT into log (null,id_usuario,GET,time) VALUES (NULL,$idq,'$text','$agora')"; 
 
             if($querInsert = mysqli_query($conn,$sqlInsert)){
                 

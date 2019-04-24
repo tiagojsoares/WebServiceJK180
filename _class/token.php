@@ -49,7 +49,10 @@ if(isset ($login) || isset($senha)){
     return ($arquivo_xml);
          
          
-      }      
+      }     
+      else{
+        return '<ERRO> Ocorreu um erro SQL</ERRO>';
+      } 
         
     }
     catch(Exception $e){
