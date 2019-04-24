@@ -48,7 +48,7 @@ function Inserir(){
     $user=$_POST['login'];
     $nome = $_POST['nome'];    
     
-    $sql = "insert into usuarios values (null,'$nome','$user','$password',1);";
+    $sql = "insert into usuarios (id_usuario,nome_usuario,nick_usuario,senha_usuario) values (null,'$nome','$user','$password',1);";
     
    
     if(mysqli_query($conn,$sql)){
