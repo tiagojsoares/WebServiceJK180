@@ -18,15 +18,15 @@ class delete{
             $sqlInsert = "INSERT into log VALUES (NULL,$idq,'$text','$agora')"; 
 
             if($querInsert = mysqli_query($conn,$sqlInsert)){
-                return 'sucesso';
+                
             }      
             else{
-                return 'fracasso';
+                return "<Erro>Ocorreu um erro no banco</Erro>";
             }      
 
         }
         catch(Exception $e){
-            return 'erro '.$e;
+            return 'return "<Erro>Ocorreu um erro no banco</Erro>"'.$e;
         }
 
     }

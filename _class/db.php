@@ -1,6 +1,6 @@
 <?php
 class db{
-/* 
+/*
 var $host = "localhost";
 var $user = "controller";
 var $pass = "admin";
