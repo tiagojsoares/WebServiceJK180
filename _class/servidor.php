@@ -14,7 +14,7 @@ class MinhaInterfaceSoap
 {
    
     public function opt ($option,$login,$senha,$token){
-      
+      return "<Teste>Teste</Teste>";
       require_once('opt.php');
         $opt = new option();
          return $opt ->action($option,$login,$senha,$token);             
