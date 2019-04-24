@@ -1,4 +1,6 @@
 <?php
+
+
 date_default_timezone_set('America/sao_paulo');
 header('Content-Type: text/html; charset=utf-8');
 class delete{
