@@ -10,7 +10,7 @@ var $base = "controller_bms";
 var $host = "127.0.0.1:54261";
 var $user = "azure";
 var $pass = "6#vWHD_$";
-var $base = "localhost";
+var $base = "controller_bms";
 var $conn = null;
 //*/
 function connect() {
