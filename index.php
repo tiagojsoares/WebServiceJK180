@@ -1,4 +1,8 @@
 <?php
+global $options;
+//$options = array('uri' => 'http://localhost/_class/servidor.php','location' => 'http://localhost/_class/servidor.php');
+$options = array('uri' => 'https://webservicecontrollerbms.azurewebsites.net/_class/servidor.php','location' => 'https://webservicecontrollerbms.azurewebsites.net/_class/servidor.php');
+
 date_default_timezone_set('America/sao_paulo');
 session_start();
 require_once('_class/db.php');
@@ -24,10 +28,7 @@ if (isset($_GET['WSDL']) || isset($_GET['wsdl'])) {
 
 
       $text1 = ($_GET);
-      $options = array(
-        'uri' => 'http://localhost/_class/servidor.php',
-        'location' => 'http://localhost/_class/servidor.php'
-      );
+     
 
       $client = new SoapClient(null, $options);
       $client->Text1($text1, $token);
@@ -54,10 +55,7 @@ $option = $_GET['action'];
 $login = $_GET['login'];
 $senha = $_GET['senha'];
 
-$options = array(
-'uri' => 'http://localhost/_class/servidor.php',
-'location' => 'http://localhost/_class/servidor.php'
-);
+
 
 $client = new SoapClient(null, $options);
 
