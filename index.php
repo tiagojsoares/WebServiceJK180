@@ -49,9 +49,7 @@ print($arquivo_xml);
 }
 } else {
 
-if (
-isset($_GET['action']) && isset($_GET['login']) &&
-isset($_GET['senha'])
+isset($_GET['action']) && isset($_GET['login']) &&isset($_GET['senha'])
 ) {
 $token = 'null';
 $option = $_GET['action'];
@@ -149,9 +147,10 @@ print($arquivo_xml);
                     </div>
                     <button class="accordion">Criando um Novo Usu&aacute;rio WebService-JK180</button>
                     <div class="panel">
-                        <p>Para criar um novo usuário para utilizar o WebService-JK180 é necessário realizar login em seguida clique em  'Criar Novo Usu&aacute;rio' 
-                            
-                          </p>
+                        <p>Para criar um novo usuário para utilizar o WebService-JK180 é necessário realizar login em
+                            seguida clique em 'Criar Novo Usu&aacute;rio'
+
+                        </p>
                     </div>
                     <button class="accordion">Gerando Novo Token</button>
                     <div class="panel">
@@ -162,9 +161,12 @@ print($arquivo_xml);
                         <p>Para Inserir um novo usuario:
                             "https://dominio/?wsdl&action=inserir&token=NovoToken&Parâmetros=Dados"</p>
                     </div>
-                    <button class="accordion">Alterando  Usu&aacute;rio existente</button>
+                    <button class="accordion">Alterando Usu&aacute;rio existente</button>
                     <div class="panel">
-                        <p>Para Alterar dados relacionado ao usuario como nome, sobrenome, função, nivel de acesso (ClearanceKey), CPF etc.. <br>https://dominio/?wsdl&action=alterar&token=TokenValido&Text1=CampoObrigatorio&Parametros=dadosParametros</p>
+                        <p>Para Alterar dados relacionado ao usuario como nome, sobrenome, função, nivel de acesso
+                            (ClearanceKey), CPF etc..
+                            <br>https://dominio/?wsdl&action=alterar&token=TokenValido&Text1=CampoObrigatorio&Parametros=dadosParametros
+                        </p>
                     </div>
                     <button class="accordion">Deletando Usu&aacute;rio Existente</button>
                     <div class="panel">
@@ -174,12 +176,14 @@ print($arquivo_xml);
                     <button class="accordion">Incluindo nivel de acesso a Usu&aacute;rio Existente</button>
                     <div class="panel">
                         <p>Para incluir um novo nivel de acesso a um Usu&aacute;rio já cadastrado <br>
-                            https://dominio/?wsdl&action=incluiracesso&token=TokenValido&Text1=CampoObrigatorio&ClearanceKey=NivelDeAcesso</p>
+                            https://dominio/?wsdl&action=incluiracesso&token=TokenValido&Text1=CampoObrigatorio&ClearanceKey=NivelDeAcesso
+                        </p>
                     </div>
                     <button class="accordion">Deletando nivel de acesso</button>
                     <div class="panel">
                         <p>Para retirar um nivel de acesso de um usuario cadastrado <br>
-                            https://dominio/?wsdl&action=excluiracesso&token=TokenValido&Text1=CampoObrigatorio&ClearanceKey=NivelDeAcesso</p>
+                            https://dominio/?wsdl&action=excluiracesso&token=TokenValido&Text1=CampoObrigatorio&ClearanceKey=NivelDeAcesso
+                        </p>
                     </div>
                     <button class="accordion">Adicionando um novo Cartão</button>
                     <div class="panel">
@@ -200,9 +204,9 @@ print($arquivo_xml);
                         <p>Para alterar um cartão a um usuario <br>
                             https://dominio/?wsdl&action=cartaoalterar&token=TokenValido&Text1=CampoObrigatorio&Novo=Cartao
                             Novo&Antigo=Cartao antigo</p>
-                    </div>                    
+                    </div>
 
-                </section>             
+                </section>
 
             </section>
 
