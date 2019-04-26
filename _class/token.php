@@ -33,7 +33,7 @@ if(isset ($login) || isset($senha)){
    
       
       $querInsert= 'insert into token (data_token,token,usuario_token,utilizado) values ("'.$agora.'","'.$token.'",'.$id_usuario.',0);';
-     
+      
     try{
       if(mysqli_query($conn,$querInsert)){
          $token;
