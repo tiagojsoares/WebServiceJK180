@@ -24,16 +24,16 @@ $conn = $connection->connect();
 if(isset ($login) || isset($senha) || isset($token)){
   
   
-  $sql = "SELECT * FROM Token WHERE token = $token";
+  $sql = "SELECT * FROM Token WHERE token = '$token'";
   $query = mysqli_query($conn,$sql);
   $dados = mysqli_fetch_assoc($query);
   $id = $dados['usuario_token'];
- 
+
   if($id==='' || $token==='' && $token===''){
   return "<Erro>Verifique o usuario e Senha ou Token</Erro>";
   }
   
-  $sqlToken="SELECT * FROM Token WHERE token = $token";
+  $sqlToken="SELECT * FROM Token WHERE token = '$token'";
   $queryToken = mysqli_query($conn,$sqlToken);
   $dadosToken = mysqli_fetch_assoc($queryToken); 
   $tokenq = $dadosToken['token'];
@@ -42,8 +42,7 @@ if(isset ($login) || isset($senha) || isset($token)){
   $agora= intval(strtotime( $dadosToken['data_token']));
   
   
-if($agora<=$stampTimeLimit){
- 
+if($agora<=$stampTimeLimit){  
 if($token === $tokenq){
     return  '<erro>Token Invalido ou experirado por favor gerar outro token</erro>';   
     }

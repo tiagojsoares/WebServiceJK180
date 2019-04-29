@@ -20,7 +20,7 @@ class InserirP{
         $connection = new db();
         $agora = date('Y-m-d H:i:s');
         $conn = $connection->connect();      
-        $sql = "update token set utilizado = 2, data_utilizado ='$agora' where token = $token";
+        $sql = "update token set utilizado = 2, data_utilizado ='$agora' where token = '$token'";
        
         if(mysqli_query($conn,$sql)){
         
@@ -35,7 +35,7 @@ class InserirP{
     function ValidaToken($token){
         $connection = new db();
         $conn = $connection->connect();      
-         $sql = "select * from token where token = $token";
+         $sql = "select * from token where token = '$token'";
          $query=mysqli_query($conn,$sql);
           $rs = mysqli_fetch_assoc($query);
           $Get=$rs['utilizado'];          

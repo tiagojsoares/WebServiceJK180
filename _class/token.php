@@ -20,8 +20,10 @@ if(isset ($login) || isset($senha)){
   }
   else{
       //criando token
-      //$token =  md5(date('s').date('y'));
-      $token = rand(100000000000000,9999999999999999);
+      $tokenGer =  md5(date('s').date('y'));
+      $token = substr($tokenGer,0,15);
+      
+      //$token = rand(100000000000000,9999999999999999);
       //return "<ERRO> $token </ERRO>";  
       $id_usuario =$dados['id_usuario'];
        
