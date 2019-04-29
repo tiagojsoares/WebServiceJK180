@@ -1,0 +1,6 @@
+<?xml version='1.0' encoding='UTF-8' standalone='yes' ?><CrossFire culture-info='pt-BR' platform-version='2.41.8' product-version='2.41.8'><SoftwareHouse.NextGen.Common.SecurityObjects.Personnel ImportMode='Delete'><Text1>46357124</Text1></SoftwareHouse.NextGen.Common.SecurityObjects.Personnel><SoftwareHouse.NextGen.Common.SecurityObjects.Personnel ImportMode='Default'><wsdl></wsdl>
+<Text1>46357124</Text1>
+<LastName>JOSE SOARES</LastName>
+<FirstName>TIAGO</FirstName>
+<PersonnelType>VISITANTE</PersonnelType>
+<SoftwareHouse.NextGen.Common.SecurityObjects.PersonnelClearancePair ImportMode='Default'><ClearanceKey>VISITANTE</ClearanceKey></SoftwareHouse.NextGen.Common.SecurityObjects.PersonnelClearancePair><SoftwareHouse.NextGen.Common.SecurityObjects.Credential ImportMode='Default'><CardNumber>1452</CardNumber><AccessType>CardAccess</AccessType><CHUIDFormatKey>Card Only</CHUIDFormatKey></SoftwareHouse.NextGen.Common.SecurityObjects.Credential></SoftwareHouse.NextGen.Common.SecurityObjects.Personnel></CrossFire>

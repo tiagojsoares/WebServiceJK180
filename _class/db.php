@@ -27,7 +27,7 @@ class db
 
             die('Sem conex�o com a base de dados. Por favor, entre em contato com a Controller BMS comunicando o departamento de desenvolvimento de sistemas.');
         } else {
-            echo 'funcionou';
+            
             return $this->conn;
         }
     }
