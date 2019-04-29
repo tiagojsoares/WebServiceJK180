@@ -1,7 +1,8 @@
 <?php
 global $options;
-//$options = array('uri' => 'http://localhost/_class/servidor.php','location' => 'http://localhost/_class/servidor.php');
-$options = array('uri' => 'https://webservicecontrollerbms.azurewebsites.net/_class/servidor.php','location' => 'https://webservicecontrollerbms.azurewebsites.net/_class/servidor.php');
+$servidor = $_SERVER['SERVER_NAME'];
+
+$options = array('uri' => "http://$servidor/_class/servidor.php",'location' => "http://$servidor/_class/servidor.php");
 
 date_default_timezone_set('America/sao_paulo');
 session_start();

@@ -1,11 +1,11 @@
 <?php
 require_once('db.php');
-
-
+$servidor = $_SERVER['SERVER_NAME'];
+echo $servidor;
 
 
 $options = array(
-    'uri' => 'http://localhost/_class/servidor.php'
+    'uri' => "http://$servidor/_class/servidor.php"
 );
 
 $server = new SoapServer(null, $options);
