@@ -1,7 +1,7 @@
 <?php
 require_once('db.php');
 $servidor = $_SERVER['SERVER_NAME'];
-echo $servidor;
+
 
 
 $options = array(
