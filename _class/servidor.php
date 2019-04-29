@@ -13,8 +13,7 @@ $server = new SoapServer(null, $options);
 class MinhaInterfaceSoap
 {
    
-    public function opt ($option,$login,$senha,$token){
-      return "<Teste>Teste</Teste>";
+    public function opt ($option,$login,$senha,$token){      
       require_once('opt.php');
         $opt = new option();
          return $opt ->action($option,$login,$senha,$token);             
