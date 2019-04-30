@@ -6,7 +6,7 @@ $options = array('uri' => "http://$servidor/_class/servidor.php",'location' => "
 
 date_default_timezone_set('America/sao_paulo');
 session_start();
-require_once('_class/db.php');
+require_once('_class/db.php');require_once('_class/function.php');
 $text1 = '';
 if (isset($_GET['WSDL']) || isset($_GET['wsdl'])) {
 
@@ -138,13 +138,17 @@ print($arquivo_xml);
 
             <section id="tutorial">
                 <section class="titulo">
-                    <h2>Bem Vindo ao Tutorial WebService-JK180</h2>
+                    <h2>Bem Vindo <?php $nome = new nome(); echo($nome->nome());?> ao Tutorial WebService-JK180</h2>
                 </section>
                 <section id="texto">
-                    <button class="accordion">Primeiro Passo</button>
+                    <button class="accordion">Antes de Começar</button>
                     <div class="panel">
                         <p> Primeiro passo é necessário ter um usuário cadastrado no
                             banco de dados. </p>
+                    </div>
+                    <button class="accordion">Servidor de Teste</button>
+                    <div class="panel">
+                        <p>Foi criado um servidor para teste <a href="https://webservicecontrollerbms.azurewebsites.net">https://webservicecontrollerbms.azurewebsites.net</a> login:visitante e senha:visitante </p>
                     </div>
                     <button class="accordion">Criando um Novo Usu&aacute;rio WebService-JK180</button>
                     <div class="panel">
