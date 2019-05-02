@@ -138,7 +138,7 @@ print($arquivo_xml);
 
             <section id="tutorial">
                 <section class="titulo">
-                    <h2>Bem Vindo <?php $nome = new nome(); echo($nome->nome());?> ao Tutorial WebService-JK180</h2>
+                    <h2>Bem Vindos <?php $nome = new nome(); echo($nome->nome());?> ao Tutorial WebService-JK180</h2>
                 </section>
                 <section id="texto">
                     <button class="accordion">Antes de Começar</button>
